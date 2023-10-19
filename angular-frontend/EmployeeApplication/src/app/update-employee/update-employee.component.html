@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <h5 class="card-header" style="background-color: rgb(59, 145, 249);color: white;">Update Employee Form</h5>
+            <div class="card-body">
+                <form (ngSubmit)="updateEmployee()">
+                    <div class="form-group">
+                        <input type="text" name="firstName" [(ngModel)]="employee.firstName" class="form-control"
+                            placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="lastName" [(ngModel)]="employee.lastName" class="form-control"
+                            placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" [(ngModel)]="employee.email" class="form-control"
+                            placeholder="Email ID">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="mobileNumber" [(ngModel)]="employee.mobileNumber" class="form-control"
+                            placeholder="Mobile Number">
+                    </div>
+                    <input type="submit" name="" id="" value="Submit" class="btn btn-primary">
+                    <input type="reset" name="" id="" value="Reset" class="btn btn-primary" style="margin-left: 10px;">
+                </form>
+            </div>
+        </div>
+    </div>
